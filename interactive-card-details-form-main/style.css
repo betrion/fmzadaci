@@ -1,0 +1,93 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"); */
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Space-Grotesk";
+  font-weight: 500;
+}
+:root {
+  /*neutral colors*/
+  --white: hsl(0, 0%, 100%);
+  --light-grayish: hsl(270, 3%, 87%);
+  --dark-grayish: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+  /*primary colors*/
+  --linear-gradient: hsl(249, 99%, 64%), hsl(278, 94%, 30%);
+}
+
+body {
+  max-width: 1440px;
+  display: flex;
+  height: 100vh;
+  gap: 1rem;
+  background-color: black;
+  justify-content: center;
+}
+.body-within {
+  background-color: var(--white);
+  width: 90%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+}
+.background {
+  background-image: url("./images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  width: 50%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  /* width: 60%; */
+}
+.form input {
+  padding: 0.4rem;
+  border: 1px solid var(--light-grayish);
+  border-radius: 10px;
+}
+.form > input {
+  margin-bottom: 1rem;
+}
+input:focus {
+  border-color: var(--very-dark-violet);
+}
+.form .confirm {
+  background-color: var(--very-dark-violet);
+  color: var(--white);
+  padding: 1rem 0.1rem;
+  border-radius: 5%;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+.flex-date {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-date input {
+  margin-bottom: 0.5rem;
+}
+.flex-date input:last-child {
+  width: 5rem;
+}
+.completed {
+  display: none;
+}
+label {
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 2.5;
+  letter-spacing: 3px;
+}
